@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tamang Homestay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .navbar {
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar-brand {
+      color: #d9b676;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .navbar-brand img {
+      height: 12vw; /* relative to screen width */
+      max-height: 150px; /* don’t grow too large */
+   }  
+    .nav-link {
+      color: #d9b676 !important;
+    }
+    .btn-book {
+      background-color: #d9b676;
+      color: white;
+    }
+    .custom-btn {
+    border: 2px solid #d9b676;
+    color: #d9b676;
+    background-color: transparent;
+  }
+
+  .custom-btn:hover {
+    background-color: #d9b676;
+    color: white;
+  }
+
+  .custom-btn i {
+    color: #d9b676;
+  }
+
+  .custom-btn:hover i {
+    color: white;
+  }
+
+  .img-thumbnail {
+  height: 200px;       /* smaller size */
+  object-fit: cover;   /* crops image nicely */
+  border-radius: 8px;  /* optional: makes corners smooth */
+}
+  @media (max-width: 768px) {
+  .parallax-section {
+  margin: 0;          /* no extra space */
+  padding: 0;
+  }
+ }
+  </style>
+</head>
+<body>
+  
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <div class="d-flex align-items-center">
+      <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#roomInfoModal">Rooms</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#howToReachModal">Directions</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="contactDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact</a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="contactDropdown">
+                <li class="dropdown-item text-muted">📞 +91 12345 67890</li>
+                <li class="dropdown-item text-muted">✉️ tamanghomestay@example.com</li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+<div class="position-absolute start-50 translate-middle-x">
+  <a class="navbar-brand" href="#">
+    <img src="tamanghomestay_logo-removebg.png" class="img-fluid" style="max-height: 120px;">
+  </a>
+</div>
+
+    <div class="d-flex align-items-center">
+      <a href="https://www.facebook.com/share/163dvc9m38/" target="_blank" class="btn btn-sm me-2 custom-btn">
+  <i class="bi bi-facebook"></i>
+</a>
+<a href="https://www.instagram.com/tamanghomestay?igsh=N254OGdmdzViY24x" target="_blank" class="btn btn-sm me-3 custom-btn">
+  <i class="bi bi-instagram"></i>
+</a>  
+    <a href="#" class="btn btn-sm btn-book" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</a>
+    </div>
+
+  </div>
+</nav>
+
+<div class="mt-5">
+  <img src="homestay_starry.jpg" alt="Tamang Homestay" class="img-fluid w-100">
+</div>
+
+
+<div class="container mt-5 text-center">
+  <h2 style="color: #d9b676; font-family: 'Georgia', 'Times New Roman', serif; font-size: 2rem;" class="mb-3">
+    TAMANG HOMESTAY
+  </h2>
+  <p class="mx-auto px-3" style="max-width: 800px;">
+    Tamang Homestay in Ghoom Bhanjyang, Darjeeling, offers a serene and authentic mountain retreat, blending traditional hospitality with modern comforts. Situated approximately 1 km from Ghoom Railway Station and 9 km from Darjeeling (main town), the homestay provides guests with breathtaking views of the Kanchenjunga range. Visitors consistently commend the establishment for its immaculate cleanliness, warm hospitality, and delectable homestyle meals. The spacious rooms, complete with expansive balconies and a rooftop terrace, allow guests to immerse themselves in the tranquil ambiance of the Himalayas. With a commendable rating of 4.7 out of 5, Tamang Homestay stands out as a top choice for travelers seeking a peaceful getaway amidst nature .
+  </p>
+</div>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <h2 class="text-center mb-4" style="color: #d9b676; font-family: 'Georgia', 'Times New Roman', serif;">
+    EXPERIENCES
+  </h2>
+
+  <div class="d-flex overflow-auto">
+    <img src="homestay_mount.jpg" alt="Experience 1" class="img-thumbnail img-fluid me-3">
+    <img src="homestay_snow.jpg" alt="Experience 2" class="img-thumbnail img-fluid me-3">
+    <img src="toytrain.jpg" alt="Experience 3" class="img-thumbnail img-fluid me-3">
+    <img src="homestay_sunset.jpg" alt="Experience 4" class="img-thumbnail img-fluid me-3">
+    <img src="homestay_ezra.jpg" alt="Experience 5" class="img-thumbnail img-fluid me-3">
+    <img src="lamahatta_trees.jpg" alt="Experience 6" class="img-thumbnail img-fluid me-3">
+    <img src="monastry_2.jpg" alt="Experience 7" class="img-thumbnail img-fluid me-3">
+  </div>
+</div>
+
+<!-- Parallax Section -->
+
+<div style="
+  background-image: url('mount_k2.jpg'); 
+  background-attachment: fixed; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  min-height: 500px;">
+</div>
+
+
+<footer class="text-center py-4 mt-5" style="background-color: #f8f9fa; border-top: solid #d9b676;">
+  <p style="color: #d9b676;">
+    © 2025 Tamang Homestay. All rights reserved.
+  </p>
+</footer>
+
+<div class="modal fade" id="roomInfoModal" tabindex="-1" aria-labelledby="roomInfoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-content" style="border: 2px solid #d9b676;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="roomInfoModalLabel" style="color: #d9b676;">Room Images & Facilities</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Image Gallery -->
+        <div class="d-flex overflow-auto mb-4">
+          <img src="homestay_ezra.jpg" alt="Room 1" class="img-thumbnail img-fluid me-3">
+          <img src="room_1.1.jpg" alt="Room 1" class="img-thumbnail img-fluid me-3">
+          <img src="room_2.jpg" alt="Room 2" class="img-thumbnail img-fluid me-3">
+          <img src="room_1.2.jpg" alt="Room 3" class="img-thumbnail img-fluid me-3">
+          <img src="room_1.3.jpg" alt="Room 4" class="img-thumbnail img-fluid me-3">
+          <img src="washroom.jpg" alt="Bathroom" class="img-thumbnail img-fluid me-3">
+        </div>
+
+        <!-- Facilities -->
+        <h6 class="mb-3" style="color: #d9b676;">Facilities:</h6>
+        <ul class="list-unstyled">
+          <li>✔️ Balcony</li>
+          <li>✔️ Free Wi-Fi</li>
+          <li>✔️ Free Parking </li>
+          <li>✔️ Triple Rooms (double + single bed)</li>
+          <li>✔️ 4 Meals per day included</li>
+          <li>✔️ Attached Private Bathroom with 24/7 hot and cold water</li>
+          <li>✔️ Clean and Sanitized Rooms</li>
+          <li>✔️ Dustbins and Toiletries Provided</li>
+          <li>✔️ Personal Work/Dining Space</li>
+          <li>✔️ Room Heater / Electric Blankets on Demand</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="howToReachModal" tabindex="-1" aria-labelledby="howToReachModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="border: 2px solid #d9b676;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="howToReachModalLabel" style="color: #d9b676;">HOW TO REACH TAMANG HOMESTAY</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>By Car:</strong> Drive to Ghoom Bhanjyang from Siliguri via Kurseong (2 hrs) or Mirik (4.5 hrs). Parking available.</p>
+        <p><strong>By Train:</strong> Nearest station is New Jalpaiguri (NJP). Take a cab or shared jeep to Ghoom.</p>
+        <p><strong>By Air:</strong> Fly to Bagdogra Airport. Cabs available to Ghoom Bhanjyang.</p>
+        <div class="ratio ratio-3x3"></div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.6870775666634!2d88.240192575148!3d27.0084468559704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e42df172f6056b%3A0xa6bc0b06f454dca2!2sTamang%20Homestay!5e0!3m2!1sen!2sin!4v1749657933941!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Booking Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="border: 2px solid #d9b676;">
+      <div class="modal-header">
+        <h5 class="modal-title">Book Your Stay</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form action="book.php" method="POST">
+          <input type="text" name="name" class="form-control mb-2" placeholder="Full Name" required>
+          <input type="tel" name="phone" class="form-control mb-2" placeholder="WhatsApp Number" required>
+          <input type="text" name="aadhar" class="form-control mb-2" placeholder="Aadhar Card Number" pattern="\d{12}" required>
+
+          <label>Start Date:</label>
+          <input type="date" name="start_date" class="form-control mb-2" required>
+
+          <label>End Date:</label>
+          <input type="date" name="end_date" class="form-control mb-2" required>
+
+          <label>Check-in Time:</label>
+          <input type="time" name="checkin_time" class="form-control mb-2" required>
+
+
+          <select name="rooms" class="form-control mb-2" required>
+            <option value="" disabled selected>No. of Rooms</option>
+            <option value="1">1 Room</option>
+            <option value="2">2 Rooms</option>
+          </select>
+
+          <select name="people" class="form-control mb-2" required>
+            <option value="" disabled selected>No. of People</option>
+            <option value="1">1</option><option value="2">2</option>
+            <option value="3">3</option><option value="4">4</option>
+            <option value="5">5</option><option value="6">6</option>
+          </select>
+
+          <small class="text-muted">Rs 1400 per head per day (4 meals included)</small><br><br>
+          <button type="submit" class="btn btn-book w-100">Submit Booking</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
