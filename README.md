@@ -1,4 +1,4 @@
-Hommestay Booking Website
+Homestay Booking Website
 
 A booking website built for a family-run homestay.  
 Features a responsive frontend, an admin dashboard, and integrations with cloud APIs for real-world automation.
